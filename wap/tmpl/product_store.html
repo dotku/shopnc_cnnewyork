@@ -1,0 +1,249 @@
+<!doctype html> 
+<html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <title>店铺首页</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="stylesheet" type="text/css" href="../css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/child.css">
+        <link rel="stylesheet" type="text/css" href="../css/store.css">
+        </head>
+        <body style="overflow: auto;" class="iframe-body websiteWrapper pageWrapper homePageWrapper portfolioTwoFilterablePageWrapper">
+<header id="header"></header>
+<div id="product_store_wp"></div>
+<footer id="footer"></footer>
+<script type="text/html" id="product_store">
+<div id="content_dom" class="pw-panel-container">     
+<!--搜索头部-->
+<div class="row c-header-toolbar">
+    <div class="small-12">
+        <div class="search">
+            <form action="product_goods.html?store_id=<%=goods_list_info.goods_store.store_id%>" method="get">
+              <input name="keyword" id="mobile_shop_search" placeholder="搜索本店商品" url="product_goods.html?store_id=<%=goods_list_info.goods_store.store_id%>" type="text">
+            </form>
+			<a href="javascript:" class="icon-search mobile_shop_btn"></a>
+            <s></s>
+        </div>
+        <a href="javascript:history.back();" class="icon-return"></a>
+        <a href="javascript:;" class="icon-nav"></a>
+    </div>
+</div>
+<div class="store-layout">
+<% if (goods_list_info.goods_store.mb_title_img) { %>
+<div style="background-image: url(<%= goods_list_info.goods_store.mb_title_img %>);" class="small-12 back-logo">
+<%} else {%>
+<div style="background-image: url(../images/store_bg.png);" class="small-12 back-logo">
+<%}%>
+        <div class="small-12 bottom">
+            <a class="store-block">
+                               <img src="<%=goods_list_info.goods_store.store_label%>" alt="<%=goods_list_info.goods_store.store_name%>">
+                                <div class="store-text">
+                    <div class="store-name"><%=goods_list_info.goods_store.store_name%></div>
+                </div>
+            </a>
+            <!--关注加active-->
+            <div class="store-follow j-m-follow"></div>
+        </div>
+    </div>
+
+<!--logo头部-->
+<div class="row c-logo-opts" style="height: 3rem;">
+    <div class="small-6 left" style="min-width:320px;">
+        <div class="row collapse">
+		<% if(goods_list_info.goods_store.store_qq){%>
+		<div class="small-3 columns right j-m-im" title="QQ联系">
+                <a href="mqq://im/chat?chat_type=wpa&uin=<%=goods_list_info.goods_store.store_qq%>&version=1&src_type=web&web_src=null">
+                    <i class="icon-connect-qq"></i>
+                    <i class="icon-connect-1" style="display: none;"></i>
+                    <span>QQ联系</span>
+                </a>
+            </div>
+			<%} else {%>
+			<div class="small-3 columns right j-m-im" title="QQ联系">
+                <a href="javascript:;" title="商家没有填写QQ" class="disable">
+                    <i class="icon-connect-qq"></i>
+                    <i class="icon-connect-1"></i>
+                    <span>QQ联系</span>
+                </a>
+            </div>
+			<%}%>
+			<% if(goods_list_info.goods_store.store_qq){%>
+            <div class="small-3 columns right j-m-im" title="电话联系">
+                <a href="tel:<%=goods_list_info.goods_store.store_phone%>" class="">
+                    <i class="icon-connect"></i>
+                    <i class="icon-connect-1" style="display: none;"></i>
+                    <span>电话联系</span>
+                </a>
+            </div>
+			<%} else {%>
+			<div class="small-3 columns right j-m-im" title="商家没有填写电话">
+                <a href="javascript:;" class="disable">
+                    <i class="icon-connect"></i>
+                    <i class="icon-connect-1" style="display: none;"></i>
+                    <span>电话联系</span>
+                </a>
+            </div>
+			<%}%>
+			
+			
+            <div class="small-3 columns right j-m-share">
+                <a href="javascript:;">
+                    <i class="icon-share"></i>
+                    <i class="icon-share-1" style="display: none;"></i>
+                    <span>分享</span>
+                </a>
+            </div>
+            <div class="small-3 columns right j-m-follow">
+                <!--已关注加class：active-->
+                <a href="javascript:;" data-type="favor-me" class="fiva">
+                    <i class="icon-follow"></i>
+                    <span>关注</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<% if (goods_list_info.goods_store.mb_sliders) { %>
+<div class="adv_list store-sliders">
+	<div class="swipe-wrap">
+<% for (var i in goods_list_info.goods_store.mb_sliders) { var s = goods_list_info.goods_store.mb_sliders[i]; %>
+		<div class="item">
+<% if (s.type == 1 && s.link) { %>
+			<a href="<%= s.link %>">
+<% } else if (s.type == 2 && s.link > 0) { %>
+			<a href="product_detail.html?goods_id=<%= s.link %>">
+<% } else { %>
+			<a href="javascript:;">
+<% } %>
+				<img alt="" src="<%= s.imgUrl %>" />
+			</a>
+		</div>
+<% } %>
+	</div>
+</div>
+<% } %>
+<div class="row c-share-wrap hide">
+    <div class="small-12">
+        <div class="share-icon">
+            <div class="share-title">
+                <span>分享到</span>
+            </div>
+            <ul class="small-block-grid-2">
+                <li>
+                    <a href="javascript:;" id="qrcode">
+                        <img src="../images/img17.png">
+                    </a>
+                    <p>二维码</p>
+                </li>
+                <li>
+                    <a href="javascript:;" id="sina" target="_blank">
+                        <img src="../images/img18.png">
+                    </a>
+                    <p>新浪微博</p>
+                </li>
+            </ul>
+            <div class="divider"></div>
+        </div>
+    </div>
+    <div class="small-12">
+       <a href="javascript:;" class="share-cancel">取消</a>
+    </div>
+</div>
+
+
+
+<!--超值单品-->
+
+<div class="row base c-product-value">
+    <div class="small-12">
+        <div class="header clearfix">
+            <span>推荐商品</span>
+        </div>
+            <ul class="small-block-grid-2" id="contentt">
+            </ul>
+            </div>
+    </div>
+<!--超值单品-->
+<div class="row base c-product-value">
+    <div class="small-12">
+        <div class="header clearfix">
+            <span>新品推荐</span>
+        </div>
+            <ul class="small-block-grid-2" id="contenttt">
+            </ul>
+            </div>
+    </div>
+<!--全部商品-->
+<div class="row base c-product-all">
+    <div class="small-12">
+        <a href="product_goods.html?store_id=<%=goods_list_info.goods_store.store_id%>">
+            <i class="icon-all"></i>
+            <span>全部商品</span>
+        </a>
+    </div>
+</div>
+</div>
+<!--遮罩层-->
+<div class="row c-mask">
+    <div class="small-12">
+        <div style="display: none;" class="mask"></div>
+    </div>
+</div>
+<div class="row c-category-list">
+    <div class="small-12">
+        <div class="row collapse">
+            <div class="small-12">
+                <!--店铺名-->
+                <div class="name"><%=goods_list_info.goods_store.store_name%></div>
+                <!--店铺评分-->
+                <div class="score">
+                    <i class="icon-full"></i>
+                    <i class="icon-full"></i>
+                    <i class="icon-full"></i>
+                    <i class="icon-full"></i>
+					<i class="icon-full"></i>
+                    <span><%=goods_list_info.goods_store.store_credit_average%>分</span>
+                </div>
+                <!--评分详细信息-->
+                <div class="score-list">
+                   <ul class="small-block-grid-3">
+                    </ul>
+                    <div class="divider"></div>
+                    <div class="divider"></div>
+                </div>
+            </div>
+        </div>
+        <!--分类详情-->
+           <div class="sid_id">
+
+               
+</div>
+        </div>
+		</div>
+	</script> 
+<script type="text/javascript" src="../js/zepto.min.js"></script> 
+<script type="text/javascript" src="../js/config.js"></script> 
+<script type="text/javascript" src="../js/template.js"></script> 
+<script type="text/javascript" src="../js/swipe.js"></script> 
+<script type="text/javascript" src="../js/common.js"></script> 
+<script type="text/javascript" src="../js/simple-plugin.js"></script> 
+<script type="text/javascript" src="../js/tmpl/footer.js"></script> 
+<script type="text/javascript" src="../js/tmpl/product_store.js"></script> 
+<script type="text/javascript">
+    $(document).ready(function(){
+		$(".menu-fixed-mini").bind("click",
+	function() {
+		if ($(".menu-fixed").hasClass("active")) {
+			$(".menu-fixed").removeClass("active")
+		} else {
+			$(".menu-fixed").addClass("active")
+		}
+	})});
+	</script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局样式*/
+html {color: #666;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
+body {margin: 0;padding: 0;	font: 12px/1.5 "微软雅黑",arial,Hiragino Sans GB,\5b8b\4f53;background:#f7f7f7;}
+div,dl,dt,dd,h1,h2,h3,h4,h5,h6,ul,li,ol,code,pre,form,fieldset,legend,textarea,th,td,hr{margin:0;padding:0;list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}
+code,i,em{font-style: normal;font-weight:500;}
+s{text-decoration:none;}
+fieldset,.button{margin:0;padding:0;border:0}
+input{margin:0;padding:0;font: normal 12px/1.5 "微软雅黑";font-size:100%;}
+textarea{font:12px/1.5 tahoma,arial,Hiragino Sans GB,\5b8b\4f53;font-size:100%;}
+p{margin:0;padding:0}
+blockquote{margin:0;padding:0}
+th{text-align: left;font-style: normal;font-weight: 500}
+button{margin: 0;padding: 0;font: 12px/1.5 tahoma,arial,Hiragino Sans GB,\5b8b\4f53;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,secion{margin:0;padding:0;display:block;}
+audio{display:inline-block;*display:inline;*zoom:1;}
+canvas{display:inline-block;*display:inline;*zoom:1;}
+video{display:inline-block;*display:inline;*zoom:1;}
+select{font:12px/1.5 tahoma,arial,Hiragino Sans GB,\5b8b\4f53;font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+img,button,input{border:0;display:block;}
+abbr{border:0;font-variant: normal}
+acronym{border: 0;font-variant: normal}
+del{text-decoration:line-through}
+address,cite,dfn,em,var,caption{font-style:normal;font-weight:500;}
+caption{text-align:left}
+a:link,a:visited{color:#333;text-decoration:none;}
+a:hover{color:#db252d;}
+.fn-clear:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+/*头部样式*/
+.ifrem-w{width:100%;height:40px;border-bottom:1px solid #d5d5d5;background:#f8f8f8;}
+.ifrem-m{width:980px;height:40px;margin:0 auto;}
+.adviframe{height:40px !important;}
+.topbar{width:100%;height:40px;background:#f8f8f8;margin:0 auto;border-bottom:1px solid #d5d5d5;}
+.topbar-wrap{width:980px;height:40px;margin:0 auto;overflow:hidden;_position:relative;}
+.topmenu{float:right;color:#666;position:relative;z-index:1000;height:40px;line-height:40px;}
+.topmenu li{float:right;_display:inline;width:500px;}
+.topmenu li a{height:40px;padding:0 20px;border:1px solid #d5d5d5;border-top:none;border-bottom:none;float:right;margin-left:-1px;}
+.topmenu li a:link,.topmenu li a:visited{font-size:14px;color:#666;}
+.topmenu li a:hover{background:#f35352;color:#fff;font-size:14px;}
+.topmenu li .cur-hover{padding:0 20px;}
+.topmenu li .cur-hover span{white-space:nowrap;text-overflow:ellipsis;display:block;overflow:hidden;text-align:center;}
+.login{margin-right:13px;}
+.regsit{margin-left:13px;}
+.topmenu .topmenu-item-last{padding-right:0;}
+.telPhone-left{float:left;font-size:14px;line-height:40px;overflow: hidden;padding-left: 15px;width: 331px;}
+.telPhone-left s,.telPhone-left span{display:block;float:left;}
+.telPhone-left s{height:23px;margin:10px 10px 0 0;width:22px;background:url("http://style.org.hc360.com/images/Finplatform/phone-head.png") no-repeat;}
+.telPhone-left span{color:#D6040D;font-family:"微软雅黑","黑体";}
+.telPhone-left i{margin:0 15px;float:left;color:#d5d5d5;font-size:12px;}
+/*导航条*/
+.header{width:100%;height:80px;background:#fff;margin-top:0px;}
+.header-wrap{width:980px;height:60px;padding-top:18px;margin:0 auto;}
+.fn-left{float:left;width:320px;height:50px;overflow:hidden;}
+.fn-left a{display:block;float:left;width:156px;height:50px;padding-right:18px;border-right:1px solid #ebebeb;background:url("http://style.org.hc360.com/images/Finplatform/Finplatform.png") no-repeat 0 -2px;}
+.header-tit{display:inline-block;font-size:28px;color:#666;font-weight:400;font-family:"微软雅黑","黑体";line-height:50px;padding-left:13px;overflow:hidden;width:130px;}
+.nav{float:right;height:50px;position:relative;width:570px;z-index: 999;}
+.nav li{float:left;_display:inline;}
+.nav-item{float:left;height:50px;position:relative;line-height:50px;}
+.nav-item-link{width:90px;display:block;height:50px;overflow:hidden;margin-right:30px;font-size:16px;font-family:"微软雅黑","黑体";text-align:center;}
+#Market .nav-item-link{margin-right:0;}
+#home .nav-nav-link,#Management .nav-nav-link,#problem .nav-nav-link,#about .nav-nav-link,#Market .nav-nav-link{color:#db252d;font-weight:bold;}
+/*==========================================================================共用底部========================================================================*/
+.footer {width:100%;}
+.footer-warp{width:100%;background:#fff;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;}
+.footer-con{margin:0 auto;width:980px;}
+.footer-con ul{float:left;margin-top:23px;}
+.footer-con ul li{line-height:20px;color:#666;margin-bottom:8px;}
+.footer-con ul li h3{font-size:14px; font-weight:bold;color:#666;}
+.Contact{width:212px;height:210px;margin-right:112px;}
+.Contact .kf{margin-top:14px;}
+.about{border-left:1px solid #eaeaea;padding-left:150px;margin-right:113px;}
+.Service{border-left:1px solid #eaeaea;padding-left:260px;}
+.about a:link,.about a:visited,.Service a:link,.Service a:visited{color:#666;}
+.about a:hover,.Service a:hover{color:#d6040d;}
+.sitelink{width:980px;margin:0 auto;padding:13px 0 10px 0;}
+.friend-link span,.friend-link p{float:left; margin-bottom:5px;}
+.friend-link span{font-size: 14px;line-height: 18px;font-weight: bold;color: #666; margin-right:14px;}
+.friend-link p{width:980px;height:auto; padding-bottom:3px; border-bottom:1px solid #e0e0e0;}
+.friend-link p a:link,.friend-link p a:visited{text-align: center;float: left;margin: 0 30px;color:#666;}
+.friend-link p a:hover{color:#d6040d;}
+.friend-link p s{float:left; color:#ccc; margin-right:12px;}
+.copyright{color:#666;line-height:24px; text-align:center;}
+.item-sidbar .application-sel-con{padding-bottom:20px;}
+.item-sidbar .application-sel-con ul{width:295px;color:#666;font-size:12px;border:none;}
+.item-sidbar .application-sel-con ul li{border:none;width:295px;margin:0 0 10px 0;overflow: visible !important;}
+.item-sidbar .item-inptxt{border:1px solid #bfbfbf !important;}
+.item-sidbar .application-sel-con .search-loan{ padding-left:86px;width:209px;}
+.item-sidbar .application-sel-con .item-cont-sel s{width:20px;height:30px;top:0;*top:1px;border:1px solid #bfbfbf;cursor:pointer;background:url("http://style.org.hc360.com/images/Finplatform/Finplatform.png") no-repeat -72px -97px;overflow:hidden;}
+.item-sidbar .item-cont-sel .item-inptxt{height:30px;line-height:30px;width:145px;}
+.item-sidbar .item-cont-sel ul{width:173px;color:#333;border: 1px solid #bfbfbf;top:32px;position:absolute;left:0;}
+.item-sidbar .item-cont-sel ul li{width:163px;margin:0;line-height:30px;height:30px;}
+.right-sidbar .item-loan ul li{height:44px;line-height:44px;font-size:14px;}
+.item-loan ul li s{float:left;display:block;width:26px;height:30px;background:url("http://style.org.hc360.com/images/Finplatform/Finplatform.png") no-repeat 0 -97px;margin-top:7px;overflow:hidden;}
+.item-loan ul li a{float:left;width:142px !important;line-height:44px;margin-left:10px;font-size:14px;}
+.selCity{float:left;}
+.Contmid{margin: 0 auto;width:980px;position:relative;}
+.itemTi{text-indent:-99999em;}
+.cityName{font:normal 16px/22px "\5FAE\8F6F\96C5\9ED1";color:#333;height:22px;width:88px;margin-bottom:4px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 88px;word-wrap: normal;}
+.city-drop-down{width:61px;height:auto; position:relative;}
+.city-drop-down h3{width:59px;height:18px;cursor:pointer;}
+.city-drop-down h3 a{display:block;width:59px;height:18px; border:1px solid #a6a6af;background:#fff; text-align:center;font:normal 12px/18px "\5FAE\8F6F\96C5\9ED1"; color:#86868f; }
+.city-drop-down h3 a:hover{color:#db252d;border:1px solid #db252d;}
+.city-drop-down .cityWarp{ background:#fff;border:1px solid #dfdfdf;display: none;left:0;line-height:13px;padding:15px 12px;position: absolute;top:36px;width: 184px;z-index: 10; opacity:0;filter:Alpha( opacity=0);z-index:10;}
+.city-drop-down ul li{ display: inline-block;margin: 0 25px 10px 0;}
+.no-right-margin{  margin-right: 0 !important;}
+.contWrapTip{width:580px;height:230px;}
+.contWrapTip .border-wrap{width:580px;height:246px;background:#ccc;margin:0;}
+.maincontWrap{width:564px;height:230px;background:#fff;margin: 8px 0 0 8px;}
+.Lefticon{width:119px;height:119px;overflow:hidden; background:url("http://style.org.hc360.com/images/Finplatform/Left-Tips.jpg") no-repeat 52px 37px;padding:36px 8px 0 52px;float:left;}
+.Rrighttext{padding-top:29px;width:365px;float:left;}
+.itemRightTxt{line-height:34px;height:34px;font:bold 16px/34px "微软雅黑","黑体";}
+.Rrighttext ul .secitemRes{font-size:14px;}
+.Rrighttext ul li span,.Rrighttext ul li em{color:#d8151e;}
+.itemRes{line-height:28px;color:#666;}
+.bottomLi{margin-top:15px;height:40px;overflow:hidden;}
+.bottomLi p{float:left;width:110px;height:40px;border-radius:6px; -webkit-border-radius:6px; -moz-border-radius:6px; -ms-border-radius:6px;margin-right:10px;padding:0 5px;background:#E6E6E6; cursor:pointer;}
+.bottomLi .p2{background:#D8151E;}
+.bottomLi p input{border:none;width:101px;height:40px; font:bold 14px/40px "微软雅黑"; background:none; cursor:pointer; margin:0 auto;}
+.bottomLi p .gointonadd{background:#D8151E;color:#fff;}
+.clickTure{margin-left:72px !important;}
+.clickTure .bottomliBtn1{width:100px;background-position: -300px -1256px !important;}
+.blackListWrap{margin-bottom:10px;height:199px;border:1px solid #e1e1e1;width:978px;}
+.blackListAdv{width:100%;height:320px;background:url("http://style.org.hc360.com/images/Finplatform/blackAdv_banner.jpg") no-repeat center;margin-bottom:10px;}
+.blackListMain{width:980px;margin:0 auto;}
+.searchWrap{width:980px;margin:0 auto 10px;}
+.blackListMain h2{background:#f1f1f1;text-indent:10px;height:40px;font:bold 16px/40px "微软雅黑","黑体";color:#d6040d;border-bottom:2px solid #d6040d;}
+.GQblackListTxt{background:#fff;padding:18px 0 23px 10px;}
+.blackListWrap dl dt{height:16px;color:#dc4548;line-height:16px;margin-bottom:6px;}
+.blackListWrap dl dt s{display:inline-block; vertical-align: top;margin:0 5px 0 0;width:16px;height:16px;overflow:hidden;background:url("http://style.org.hc360.com/images/Finplatform/Finplatform.png") no-repeat -384px -269px;}
+.blackListWrap dl dd{margin-bottom:2px;overflow:hidden;padding-left:10px;}
+.blackListWrap dl dd span{display:inline-block; vertical-align:top;float:left;}
+.blackListWrap dl dd p{width:906px;line-height:22px;float:left;}
+.headSearch{border:1px solid #e1e1e1;border-bottom:none;width:973px;background:#f1f1f1;height:44px;padding:14px 0 0 5px; overflow:hidden;}
+.itemSear{width:278px;height:32px;padding-left:10px;overflow:hidden;float:left;}
+.sfznumb{width:290px;}
+.itemSear span,.itemSear .textInput{float:left;}
+.itemSear span{margin-right:5px;line-height:32px;}
+.itemSear .textInput{width:210px;height:30px;border:1px solid #bfbfbf;background:#fff;}
+.itemSear .textInput input{border:0;height:18px;line-height:18px;padding:6px 10px;width:190px;}
+.SearchBth{float:left;}
+.Searchresout{background:#fff;width:980px;}
+.Searchresout table{width:100%;}
+.Searchresout table tr{height:40px;}
+.Searchresout table tr th,.Searchresout table tr td{border:1px solid #e1e1e1;text-align:center;padding:5px;}
+.Searchresout table .tabHead{font-weight:blod;background:#fff !important;color:#333;font-size:14px;}
+.itemWidth{width:100%;}
+.Selreason{background:#efefef;height:500px;border-bottom:1px solid #c6c6c6;}
+#Advanimate{height:400px;overflow:hidden;background:url("http://style.org.hc360.com/images/Finplatform/banner1920x400.jpg") no-repeat center;}
+.Contmid .itemTi{position:absolute;left:50%;margin-left:-279px;top:51px;width:558px;height:36px;background:url("http://style.org.hc360.com/images/Finplatform/Flow-Tit.jpg") no-repeat 0 0;}
+.ProFeature{width:790px;height:252px; position: absolute; left: 112px; top:115px;}
+.ProFeature li{display: block; width: 229px; height:252px; overflow: hidden; float: left; margin-right:34px;}
+.list01{ background: url("http://style.org.hc360.com/images/Finplatform/listL-1.jpg") no-repeat;}
+.list02{ background: url("http://style.org.hc360.com/images/Finplatform/listL-2.jpg") no-repeat;}
+.list03{ background: url("http://style.org.hc360.com/images/Finplatform/listL-3.jpg") no-repeat;}
+.entry{bottom:37px;position:absolute;left:50%;margin-left:-140px;width:280px;height:56px;background:url("http://style.org.hc360.com/images/Finplatform/BottomBtn.jpg") no-repeat; text-indent:-9999em;}
+.entry a{display:block;width:280px;height:56px;cursor:pointer;}
+.Selreason .entry{z-index:120;}
+.Selreason .Contmid{height:500px;}
+.flow,.flow .Contmid{height:788px;}
+.flow{background:#fff;}
+.flow .soEasy{position:absolute;bottom:68px;left:50%;margin-left:-597px;width:1194px;height:606px; background:url("http://style.org.hc360.com/images/Finplatform/flow.png") no-repeat;}
+.flow .itemTi{background-position:0 -44px;}
+.vipService{height:358px;border-top:1px solid #c6c6c6;botder-bottom:1px solid #e1e1e1; background:#f1f1f1;}
+.vipService .Contmid{height:358px;margin:0 auto;}
+.vipService .itemTi{height:75px;background-position:0 -81px;top:20px;}
+.Servsel{width:944px;height:102px; overflow:hidden; position:absolute;left:36px;top:133px;}
+.Servsel ul{width:120%;}
+.Servsel ul li{float:left;_display:inline;overflow:hidden;}
+.Servsel ul li div{background:url("http://style.org.hc360.com/images/Finplatform/Serviceicon.jpg") no-repeat;overflow:hidden;float:left;}
+.itemLeft-Icon1,.itemLeft-Icon2,.itemLeft-Icon3{width:100px;height:100px;}
+.itemRight-Tit1,.itemRight-Tit2,.itemRight-Tit3{height:76px; margin: 19px 0 0 11px; text-indent:-9999em;}
+.Servsel ul li .itemLeft-Icon1{background-position:0 0;}
+.Servsel ul li .itemLeft-Icon2{background-position:-107px 0;}
+.Servsel ul li .itemLeft-Icon3{background-position:-215px 0;}
+.Servsel ul li .itemRight-Tit1{width:87px;background-position:-2px -210px;margin-right:154px;}
+.Servsel ul li .itemRight-Tit2{width:98px;background-position:-95px -210px;margin-right:108px;}
+.Servsel ul li .itemRight-Tit3{width:136px;background-position:-200px -210px;}
+.Servsel ul li.Service-hover .itemLeft-Icon1{background-position:0 -102px;}
+.Servsel ul li.Service-hover .itemLeft-Icon2{background-position:-107px -102px;}
+.Servsel ul li.Service-hover .itemLeft-Icon3{background-position:-215px -103px;}
